@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY SEARCH | Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">E</span>
+        EASY <span class="blue">SEARCH</span>
+    </a>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="explore.html">Explore</a>
+        <a href="tips.html">Search Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="page">
+    <p class="eyebrow">FOLLOW YOUR CURIOSITY</p>
+    <h1>What will you<br><span class="blue">explore</span> today?</h1>
+    <p class="page-intro">Choose a topic to start searching.</p>
+
+    <section class="topic-grid">
+        <button class="topic" onclick="quickSearch('beginner coding tutorials')">
+            <strong>⌘ Learn coding</strong>
+            <span>Programming and tutorials</span>
+        </button>
+
+        <button class="topic" onclick="quickSearch('HTML CSS web design')">
+            <strong>▣ Web design</strong>
+            <span>Layouts, colors, and websites</span>
+        </button>
+
+        <button class="topic" onclick="quickSearch('interesting science facts')">
+            <strong>✳ Science</strong>
+            <span>Facts and discoveries</span>
+        </button>
+
+        <button class="topic" onclick="quickSearch('history for students')">
+            <strong>◷ History</strong>
+            <span>People and past events</span>
+        </button>
+
+        <button class="topic" onclick="quickSearch('mathematics learning resources')">
+            <strong>∑ Mathematics</strong>
+            <span>Methods and practice</span>
+        </button>
+
+        <button class="topic" onclick="quickSearch('educational resources')">
+            <strong>✦ Study resources</strong>
+            <span>Helpful learning material</span>
+        </button>
+    </section>
+</main>
+
+<footer>
+    <span>© <span id="year"></span> EASY SEARCH</span>
+    <span>Made to keep searching simple.</span>
+</footer>
+
+</body>
+</html>

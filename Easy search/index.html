@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY SEARCH | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">E</span>
+        EASY <span class="blue">SEARCH</span>
+    </a>
+
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    <nav id="navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="explore.html">Explore</a>
+        <a href="tips.html">Search Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <p class="eyebrow">YOUR WEB, MADE SIMPLE</p>
+
+        <h1>
+            Search the web.<br>
+            <span class="orange">Keep it</span>
+            <span class="blue">easy.</span>
+        </h1>
+
+        <p class="description">
+            A simple place to start exploring the internet.
+            Type what you are looking for and find your next answer.
+        </p>
+
+        <form class="search-box"
+              action="https://duckduckgo.com/"
+              method="get">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="search"
+                name="q"
+                id="searchInput"
+                placeholder="What do you want to find?"
+                required>
+
+            <button type="submit">Search ↗</button>
+        </form>
+
+        <p class="note">
+            Search results open on DuckDuckGo.
+        </p>
+
+        <div class="quick-search">
+            <span>Try:</span>
+            <button onclick="quickSearch('learn coding')">Learn coding</button>
+            <button onclick="quickSearch('science facts')">Science</button>
+            <button onclick="quickSearch('web design ideas')">Web design</button>
+        </div>
+    </section>
+
+    <section class="cards">
+        <article class="card orange-card">
+            <div class="card-icon">↗</div>
+            <h2>Find what you need</h2>
+            <p>Search for websites, answers, tutorials and more.</p>
+        </article>
+
+        <article class="card blue-card">
+            <div class="card-icon">◎</div>
+            <h2>Simple by design</h2>
+            <p>A clean layout that keeps searching easy.</p>
+        </article>
+
+        <article class="card green-card">
+            <div class="card-icon">✦</div>
+            <h2>Explore safely</h2>
+            <p>Learn to search smarter and browse safely.</p>
+        </article>
+    </section>
+
+    <section class="callout">
+        <div>
+            <p class="eyebrow">KEEP LEARNING</p>
+            <h2>Make every search count.</h2>
+        </div>
+        <a href="tips.html">Read search tips →</a>
+    </section>
+</main>
+
+<footer>
+    <span>© <span id="year"></span> EASY SEARCH</span>
+    <span>Made to keep searching simple.</span>
+</footer>
+
+</body>
+</html>

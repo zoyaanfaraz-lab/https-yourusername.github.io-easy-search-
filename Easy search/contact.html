@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY SEARCH | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">E</span>
+        EASY <span class="blue">SEARCH</span>
+    </a>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="explore.html">Explore</a>
+        <a href="tips.html">Search Tips</a>
+        <a class="active" href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="page">
+    <p class="eyebrow">IDEAS MAKE PROJECTS BETTER</p>
+    <h1>Have an idea?<br><span class="orange">Let's improve it.</span></h1>
+    <p class="page-intro">
+        Share an idea or feedback about EASY SEARCH.
+        You can prepare a message and copy it below.
+    </p>
+
+    <form class="contact-form" id="contactForm">
+        <label for="visitorName">Your name (optional)</label>
+        <input id="visitorName" type="text" placeholder="Your name">
+
+        <label for="visitorMessage">Your message</label>
+        <textarea id="visitorMessage" rows="5" placeholder="Write your idea..." required></textarea>
+
+        <button type="submit">Prepare feedback →</button>
+    </form>
+
+    <section id="feedbackResult" hidden>
+        <h2>Your message is ready</h2>
+        <textarea id="preparedMessage" rows="6" readonly></textarea>
+        <br>
+        <button id="copyButton" class="contact-form">Copy feedback</button>
+        <p id="copyStatus"></p>
+    </section>
+</main>
+
+<footer>
+    <span>© <span id="year"></span> EASY SEARCH</span>
+    <span>Made to keep searching simple.</span>
+</footer>
+
+</body>
+</html>

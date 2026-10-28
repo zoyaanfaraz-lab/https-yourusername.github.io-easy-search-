@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY SEARCH | Search Tips</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">E</span>
+        EASY <span class="blue">SEARCH</span>
+    </a>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="explore.html">Explore</a>
+        <a class="active" href="tips.html">Search Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="page">
+    <p class="eyebrow">SEARCH A LITTLE SMARTER</p>
+    <h1>Better searches.<br><span class="green">Better finds.</span></h1>
+    <p class="page-intro">Use these tips to find useful information and browse more safely.</p>
+
+    <section class="tip">
+        <h2>01 — Use specific words</h2>
+        <p>Instead of "coding", search for "beginner Python tutorials".</p>
+        <button onclick="quickSearch('beginner Python tutorials')">Try this search ↗</button>
+    </section>
+
+    <section class="tip">
+        <h2>02 — Search an exact phrase</h2>
+        <p>Use quotation marks around a phrase, such as "solar system facts".</p>
+        <button onclick="quickSearch('"solar system facts"')">Try this search ↗</button>
+    </section>
+
+    <section class="tip">
+        <h2>03 — Check your sources</h2>
+        <p>Compare information from trustworthy websites and check when it was published.</p>
+    </section>
+
+    <section class="tip">
+        <h2>04 — Protect your privacy</h2>
+        <p>Never enter passwords, home addresses, or other private information into a search.</p>
+    </section>
+
+    <section class="tip">
+        <h2>05 — Watch out for suspicious links</h2>
+        <p>Be careful with unexpected downloads, pop-ups, and websites asking for personal information.</p>
+    </section>
+</main>
+
+<footer>
+    <span>© <span id="year"></span> EASY SEARCH</span>
+    <span>Made to keep searching simple.</span>
+</footer>
+
+</body>
+</html>
+
